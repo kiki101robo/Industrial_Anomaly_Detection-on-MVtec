@@ -33,3 +33,31 @@ The system supports both binary classification (good vs defective) and fine-grai
     - ├── flip/
     - ├── scratch/
     - └── good/
+## Usage
+1. Feature Extraction and Memory Bank Creation
+python
+Copy
+Edit
+from resnet_extractor import resnet_feature_extractor
+
+# Initialize model
+backbone = resnet_feature_extractor().cuda()
+
+# Build memory bank from training data
+memory_bank = build_memory_bank(backbone, good_images_path)
+2. Anomaly Scoring
+Extract patch features for each test image
+
+Compute Euclidean distance to memory bank
+
+Use max of minimum patch distances as the image-level anomaly score
+
+Generate heatmaps and segmentation masks for visualization
+
+3. Evaluation
+Calculate pixel-level and image-level ROC-AUC
+
+Use 3-sigma rule or F1-score optimization for threshold selection
+
+Display confusion matrix and ROC curve
+
