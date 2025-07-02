@@ -23,13 +23,13 @@ The system supports both binary classification (good vs defective) and fine-grai
 
 - 15 object categories (e.g., bottle, screw, metal_nut)
 - Structure:
-mvtec_anomaly_detection/
-└── metal_nut/
-├── train/
-│ └── good/
-└── test/
-├── bent/
-├── color/
-├── flip/
-├── scratch/
-└── good/
+  - mvtec_anomaly_detection/
+  - └── metal_nut/
+  - ├── train/
+  - │ └── good/
+  - └── test/
+  - ├── bent/
+  - ├── color/
+  - ├── flip/
+  - ├── scratch/
+  - └── good/
