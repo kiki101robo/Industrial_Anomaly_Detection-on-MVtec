@@ -26,10 +26,10 @@ The system supports both binary classification (good vs defective) and fine-grai
   - mvtec_anomaly_detection/
   - └── metal_nut/
   - ├── train/
-  - │ └── good/
+    - │ └── good/
   - └── test/
-  - ├── bent/
-  - ├── color/
-  - ├── flip/
-  - ├── scratch/
-  - └── good/
+    - ├── bent/
+    - ├── color/
+    - ├── flip/
+    - ├── scratch/
+    - └── good/
