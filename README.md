@@ -169,4 +169,7 @@ self.model.layer4[-1].register_forward_hook(hook)  # Later features
 
 ## References
 
-This implementation is based on the PatchCore paper and adapted for the MVTec Anomaly Detection dataset. The approach combines deep feature extraction with efficient memory bank comparison for robust anomaly detection in industrial settings.
+- This implementation is based on the PatchCore method described in the paper:  
+  **PatchCore: Patch-Based Out-of-Distribution Detection for Anomaly Segmentation**  
+  [Roth et al., 2021 – arXiv:2106.08265](https://arxiv.org/abs/2106.08265)
+
