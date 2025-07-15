@@ -16,6 +16,10 @@ This project implements an anomaly detection system that:
 - **Comprehensive Evaluation**: Includes ROC curves, confusion matrices, and F1 score optimization
 - **Visualization Tools**: Generates heatmaps and segmentation maps for anomaly localization
 
+## Example Output
+
+![Anomaly Detection Output](Output.JPG)
+
 ## Requirements
 
 ```bash
@@ -104,9 +108,6 @@ class resnet_feature_extractor(torch.nn.Module):
 - **Threshold Optimization**: Best threshold based on F1 score
 
 ## Output Files
-## Example Output
-
-![Anomaly Detection Output](Output.JPG)
 
 The system generates:
 - Individual anomaly visualizations for each test image
